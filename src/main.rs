@@ -153,11 +153,11 @@
 
 
 fn main(){
-    let age: i32 = 20;
+    let age: i32 = 13;
     if age < 13{
         println!("Your are child");
     }
-    else if age > 13 && age < 19 {
+    else if age >= 13 && age <= 19 {
         println!("Your are Teen");
     }
     else {
