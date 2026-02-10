@@ -19,9 +19,7 @@
 //     println!("the value of x is {}", x);
 // }
 
-
 // Lesson 3 : Constant vs variable
-
 
 // fn main (){
 //     const PI:f64 = 3.1415;
@@ -29,8 +27,7 @@
 
 // }
 
-
-// lesson  4 : Shadowing 
+// lesson  4 : Shadowing
 
 // fn main (){
 //     let x = 5;
@@ -44,16 +41,39 @@
 
 // }
 
+// fn main(){
+//     const MAX_SCORE: i32 = 100;
 
-fn main(){
-    const MAX_SCORE: i32 = 100;
-    
-    let score = 50;
-    println!("The value of score is {}" , score);
-    
-    let score = score + 20;
-    println!("The value of score is {}" , score);
-    
-    
-    println!("The value of MAX_SCORE is {}", MAX_SCORE);
+//     let score = 50;
+//     println!("The value of score is {}" , score);
+
+//     let score = score + 20;
+//     println!("The value of score is {}" , score);
+
+//     println!("The value of MAX_SCORE is {}", MAX_SCORE);
+// }
+
+fn main() {
+    let age: i32 = 20;
+    println!("age is {}", age);
+
+    let height: f64 = 200.6;
+    println!("Height is {}", height);
+
+    let is_student: bool = true;
+    println!("is student is {}", is_student);
+
+    let grade: char = 'B';
+    println!("Grade is {}", grade);
+
+    let info: (&str, i32) = ("person", 20);
+    println!("name is {}", info.0);
+    println!("age is {}", info.1);
+
+    let number: [i32; 5] = [1, 2, 3, 4, 5];
+    println!("number is {}", number[0]);
+    println!("number is {}", number[1]);
+    println!("number is {}", number[2]);
+    println!("number is {}", number[3]);
+    println!("number is {}", number[4]);
 }
