@@ -53,27 +53,48 @@
 //     println!("The value of MAX_SCORE is {}", MAX_SCORE);
 // }
 
+// fn main() {
+//     let age: i32 = 20;
+//     println!("age is {}", age);
+
+//     let height: f64 = 200.6;
+//     println!("Height is {}", height);
+
+//     let is_student: bool = true;
+//     println!("is student is {}", is_student);
+
+//     let grade: char = 'B';
+//     println!("Grade is {}", grade);
+
+//     let info: (&str, i32) = ("person", 20);
+//     println!("name is {}", info.0);
+//     println!("age is {}", info.1);
+
+//     let number: [i32; 5] = [1, 2, 3, 4, 5];
+//     println!("number is {}", number[0]);
+//     println!("number is {}", number[1]);
+//     println!("number is {}", number[2]);
+//     println!("number is {}", number[3]);
+//     println!("number is {}", number[4]);
+// }
+
+// string in RUST
+
+// fn main(){
+//     let name: &str  = "Rust";
+//     println!("This is rust {}", name);
+
+//     let mut name: String  = String::from("Rust");
+//     name.push_str(      " Language");
+//     println!("{}", name)
+
+// }
+
 fn main() {
-    let age: i32 = 20;
-    println!("age is {}", age);
+    let language: &str = "Rust";
+    println!("langge at the start is {}", language);
 
-    let height: f64 = 200.6;
-    println!("Height is {}", height);
-
-    let is_student: bool = true;
-    println!("is student is {}", is_student);
-
-    let grade: char = 'B';
-    println!("Grade is {}", grade);
-
-    let info: (&str, i32) = ("person", 20);
-    println!("name is {}", info.0);
-    println!("age is {}", info.1);
-
-    let number: [i32; 5] = [1, 2, 3, 4, 5];
-    println!("number is {}", number[0]);
-    println!("number is {}", number[1]);
-    println!("number is {}", number[2]);
-    println!("number is {}", number[3]);
-    println!("number is {}", number[4]);
+    let mut course: String = String::from("learning");
+    course.push_str( " Rust");
+    println!("{}", course);
 }
