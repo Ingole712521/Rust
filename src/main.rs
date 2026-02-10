@@ -152,15 +152,49 @@
 
 
 
-fn main(){
-    let age: i32 = 13;
-    if age < 13{
-        println!("Your are child");
-    }
-    else if age >= 13 && age <= 19 {
-        println!("Your are Teen");
-    }
-    else {
-        println!("Your are adult")
+// fn main(){
+//     let age: i32 = 13;
+//     if age < 13{
+//         println!("Your are child");
+//     }
+//     else if age >= 13 && age <= 19 {
+//         println!("Your are Teen");
+//     }
+//     else {
+//         println!("Your are adult")
+//     }
+// }
+
+
+// fn main(){
+//     let number  = 6;
+//     match number {
+//         1 => println!("Monday"),
+//         2 => println!("Tuesday"),
+//         3 => println!("Wednesday"),
+//         4 => println!("Thrusday"),
+//         5 => println!("Friday"),
+//         6 => println!("Saturday"),
+//         7 => println!("Sunday"),
+//         _ => println!("Invalid number")
+//     }
+
+// }
+
+
+
+// fn main(){
+//     let mut number = 1;
+
+//     while number <=10 {
+//         println!("Number is {}", number);
+//     number +=1;
+//     }
+// }
+
+
+fn main (){
+    for number in 1..10{
+        println!("Number is {}", number);
     }
 }
