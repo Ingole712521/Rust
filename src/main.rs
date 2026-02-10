@@ -124,28 +124,43 @@
 //     println!("Height is {}", height)
 // }
 
-use std::io;
+// use std::io;
 
-fn main() {
-    let mut a = String::new();
-    println!("Enter the value of a");
+// fn main() {
+//     let mut a = String::new();
+//     println!("Enter the value of a");
 
-    let mut b = String::new();
-    println!("Enter the value of b");
+//     let mut b = String::new();
+//     println!("Enter the value of b");
 
-    io::stdin()
-        .read_line(&mut a)
-        .expect("failed to read the line");
-    io::stdin()
-        .read_line(&mut b)
-        .expect("failed to read the line");
+//     io::stdin()
+//         .read_line(&mut a)
+//         .expect("failed to read the line");
+//     io::stdin()
+//         .read_line(&mut b)
+//         .expect("failed to read the line");
 
-    let a: i32 = a.trim().parse().unwrap();
-    let b: i32 = b.trim().parse().unwrap();
+//     let a: i32 = a.trim().parse().unwrap();
+//     let b: i32 = b.trim().parse().unwrap();
 
-    println!("a + b = {}", a + b);
-    println!("a - b = {}", a - b);
-    println!("a * b = {}", a * b);
-    println!("a % b = {}", a % b);
-    println!("a / b = {}", a / b);
+//     println!("a + b = {}", a + b);
+//     println!("a - b = {}", a - b);
+//     println!("a * b = {}", a * b);
+//     println!("a % b = {}", a % b);
+//     println!("a / b = {}", a / b);
+// }
+
+
+
+fn main(){
+    let age: i32 = 20;
+    if age < 13{
+        println!("Your are child");
+    }
+    else if age > 13 && age < 19 {
+        println!("Your are Teen");
+    }
+    else {
+        println!("Your are adult")
+    }
 }
