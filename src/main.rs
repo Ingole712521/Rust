@@ -90,11 +90,62 @@
 
 // }
 
-fn main() {
-    let language: &str = "Rust";
-    println!("langge at the start is {}", language);
+// fn main() {
+//     let language: &str = "Rust";
+//     println!("langge at the start is {}", language);
 
-    let mut course: String = String::from("learning");
-    course.push_str( " Rust");
-    println!("{}", course);
+//     let mut course: String = String::from("learning");
+//     course.push_str( " Rust");
+//     println!("{}", course);
+// }
+
+// use std::io;
+// fn main() {
+//     let mut name = String::new();
+//     let mut age = String::new();
+//     let mut height = String::new();
+
+//     println!("Enter your name ",);
+//     io::stdin()
+//         .read_line(&mut name)
+//         .expect("failed to read the line");
+
+//     println!("Enter your age ",);
+//     io::stdin()
+//         .read_line(&mut age)
+//         .expect("failed to read the line");
+
+//     println!("Enter your height ",);
+//     io::stdin().read_line( &mut height).expect("This line is not readbable");
+
+//     println!("NAme is {}", name);
+
+//     println!("NAme is {}", age);
+//     println!("Height is {}", height)
+// }
+
+use std::io;
+
+fn main() {
+    let mut a = String::new();
+    println!("Enter the value of a");
+
+    let mut b = String::new();
+    println!("Enter the value of b");
+
+    io::stdin()
+        .read_line(&mut a)
+        .expect("failed to read the line");
+    io::stdin()
+        .read_line(&mut b)
+        .expect("failed to read the line");
+
+    let a: i32 = a.trim().parse().unwrap();
+    let b: i32 = b.trim().parse().unwrap();
+
+    println!("a + b = {}", a + b);
+    println!("a - b = {}", a - b);
+    println!("a * b = {}", a * b);
+    println!("a % b = {}", a % b);
+    println!("a / b = {}", a / b);
 }
