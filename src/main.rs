@@ -150,8 +150,6 @@
 //     println!("a / b = {}", a / b);
 // }
 
-
-
 // fn main(){
 //     let age: i32 = 13;
 //     if age < 13{
@@ -164,7 +162,6 @@
 //         println!("Your are adult")
 //     }
 // }
-
 
 // fn main(){
 //     let number  = 6;
@@ -181,8 +178,6 @@
 
 // }
 
-
-
 // fn main(){
 //     let mut number = 1;
 
@@ -192,9 +187,50 @@
 //     }
 // }
 
+// fn main (){
+//     for number in 1..10{
+//         println!("Number is {}", number);
+//     }
+// }
 
-fn main (){
-    for number in 1..10{
-        println!("Number is {}", number);
+// fn main() {
+//     for number in 1..=20 {
+//         if number % 2 == 0 {
+//             println!("Number is even {}", number);
+//         }
+//     }
+// }
+
+
+
+
+// Function in rust
+
+// fn multiply(a: i32, b: i32)-> i32 {
+//    return a * b
+// }
+
+
+// fn main(){
+//     let result= multiply(5,10);
+//     println!("THe result is {}", result);
+
+// }
+
+
+
+// Expressions vs Statements
+
+
+
+fn main(){
+    let number = 7;
+
+    let result = if number %2 ==0 {
+        0
     }
+    else{
+         1
+    };
+    println!("The result is {}", result)
 }
