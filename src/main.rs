@@ -278,20 +278,40 @@
 //     println!("The slice of the array is {:?}", slice);
 // }
 
-struct User {
+// struct User {
+//     name: String,
+//     roll_no: i32,
+//     is_active: bool,
+// }
+
+// fn main() {
+//     let user_new = User {
+//         name: String::from("Hello"),
+//         roll_no: 25,
+//         is_active: false,
+//     };
+
+//     println!("The name is new user is {} ", user_new.name);
+//     println!("The age is new user is {} ", user_new.roll_no);
+//     println!("The active is new user is  {} ", user_new.is_active);
+// }
+
+struct Student {
     name: String,
     roll_no: i32,
-    is_active: bool,
+}
+
+impl Student {
+    fn display(&self) {
+        println!("Name is {}", self.name);
+        println!("ROll no is {}", self.roll_no);
+    }
 }
 
 fn main() {
-    let user_new = User {
-        name: String::from("Hello"),
-        roll_no: 25,
-        is_active: false,
+    let s1 = Student {
+        name: String::from("OMPL"),
+        roll_no: 10,
     };
-
-    println!("The name is new user is {} ", user_new.name);
-    println!("The age is new user is {} ", user_new.roll_no);
-    println!("The active is new user is  {} ", user_new.is_active);
+    s1.display();
 }
