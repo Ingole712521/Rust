@@ -201,15 +201,11 @@
 //     }
 // }
 
-
-
-
 // Function in rust
 
 // fn multiply(a: i32, b: i32)-> i32 {
 //    return a * b
 // }
-
 
 // fn main(){
 //     let result= multiply(5,10);
@@ -217,20 +213,85 @@
 
 // }
 
-
-
 // Expressions vs Statements
 
+// fn main(){
+//     let number = 7;
 
+//     let result = if number %2 ==0 {
+//         0
+//     }
+//     else{
+//          1
+//     };
+//     println!("The result is {}", result)
+// }
 
-fn main(){
-    let number = 7;
+// fn main() {
+//     let mut name = String::from("Rust");
+//     let changeName = &mut name;
+//     changeName.push_str( " Language");
 
-    let result = if number %2 ==0 {
-        0
-    }
-    else{
-         1
+//     println!("Changed Name is {}", changeName)
+// }
+
+// fn print_length(s: &String){
+//     println!("Length of the sting is {}" , s.len());
+// }
+
+// fn main(){
+
+//     let result = String::from("Text");
+//     print_length(&result);
+
+// }
+
+// fn add_suffix(s: &mut String) {
+//     s.push_str("Text Add");
+//     println!("Result is {}" , s)
+// }
+
+// fn main() {
+//     let mut result = String::from(" Learning");
+//     add_suffix(&mut result);
+// }
+
+// fn create_message() -> String{
+//     let s = String::from("Hello Solana ");
+//     return s
+// }
+
+// fn main(){
+//     let message = create_message();
+//     println!("Message is {}", message);
+// }
+
+// fn main(){
+//     let s = String::from("SolanaLearing");
+//     let result = &s[0..6];
+//     println!("Result is {}", result)
+// }
+
+// fn main(){
+//     let arr = [1,2,3,4,5,6,7,8,9,10];
+//     let slice = &arr[3..7];
+//     println!("The slice of the array is {:?}", slice);
+// }
+
+struct User {
+    name: String,
+    roll_no: i32,
+    is_active: bool,
+}
+
+fn main() {
+    let user_new = User {
+        name: String::from("Hello"),
+        roll_no: 25,
+        is_active: false,
     };
-    println!("The result is {}", result)
+
+    println!("The name is new user is {} ", user_new.name);
+    println!("The age is new user is {} ", user_new.roll_no);
+    println!("The active is new user is  {} ", user_new.is_active);
 }
