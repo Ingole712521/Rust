@@ -296,22 +296,57 @@
 //     println!("The active is new user is  {} ", user_new.is_active);
 // }
 
-struct Student {
-    name: String,
-    roll_no: i32,
+// struct Student {
+//     name: String,
+//     roll_no: i32,
+// }
+
+// impl Student {
+//     fn display(&self) {
+//         println!("Name is {}", self.name);
+//         println!("ROll no is {}", self.roll_no);
+//     }
+// }
+
+// fn main() {
+//     let s1 = Student {
+//         name: String::from("OMPL"),
+//         roll_no: 10,
+//     };
+//     s1.display();
+// }
+
+// struct Car {
+//     brand: String,
+//     year: i32,
+// }
+
+// impl Car {
+//     fn display(&self) {
+//         println!("Brand is {}", self.brand);
+//         println!("Year is {}", self.year)
+//     }
+// }
+
+// fn main() {
+//     let c1 = Car {
+//         brand: String::from("KIA"),
+//         year: 200001,
+//     };
+//     c1.display();
+// }
+
+enum PaymentMethod {
+    Cash,
+    Card,
+    Crypto,
 }
 
-impl Student {
-    fn display(&self) {
-        println!("Name is {}", self.name);
-        println!("ROll no is {}", self.roll_no);
+fn main(){
+    let pay = PaymentMethod::Card;
+    match pay{
+        PaymentMethod::Card => println!("Paid using Card"),
+        PaymentMethod::Cash => println!("Paid using Cash"),
+        PaymentMethod::Crypto => println!("Paid using crypto"),
     }
-}
-
-fn main() {
-    let s1 = Student {
-        name: String::from("OMPL"),
-        roll_no: 10,
-    };
-    s1.display();
 }
