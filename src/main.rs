@@ -353,6 +353,8 @@
 
 // pub mod other_file;
 mod pratice;
+mod input;
 fn main() {
     pratice::pratice();
+    input :: input();
 }
