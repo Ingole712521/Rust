@@ -1,4 +1,4 @@
-use std::io;
+// use std::io;
 
 pub fn input() {
     // name and print
@@ -58,23 +58,21 @@ pub fn input() {
 
     // POsitive Negative
 
-    fn postive() {
-        let mut a = String::new();
-        io::stdin().read_line(&mut a).unwrap();
-        let a: i32 = a.trim().parse().unwrap();
+    // fn postive() {
+    //     let mut a = String::new();
+    //     io::stdin().read_line(&mut a).unwrap();
+    //     let a: i32 = a.trim().parse().unwrap();
 
-        if a > 0 {
-            println!("Positive");
-        }
-        else if a < 0{
-            println!("Negative");
-        }
-        else{
-            println!("Zero")
-        }
-    }
-
-
+    //     if a > 0 {
+    //         println!("Positive");
+    //     }
+    //     else if a < 0{
+    //         println!("Negative");
+    //     }
+    //     else{
+    //         println!("Zero")
+    //     }
+    // }
 
 
 
@@ -86,7 +84,9 @@ pub fn input() {
 
 
 
-    postive();
+
+
+    // postive();
     // largest();
     // odd();
     // sumdigit();

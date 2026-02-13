@@ -88,16 +88,16 @@ pub fn pratice() {
 
 
     // COnvert into the float
-    fn convert(){
-        let a = 5;
-        let b = a as f64;
-        println!("THe b is {}", b)
-    }
+    // fn convert(){
+    //     let a = 5;
+    //     let b = a as f64;
+    //     println!("THe b is {}", b)
+    // }
 
 
 
 
-    convert()
+    // convert()
     // lengtharr();
     // arr();
     // tuples();
