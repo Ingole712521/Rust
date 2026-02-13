@@ -336,17 +336,23 @@
 //     c1.display();
 // }
 
-enum PaymentMethod {
-    Cash,
-    Card,
-    Crypto,
-}
+// enum PaymentMethod {
+//     Cash,
+//     Card,
+//     Crypto,
+// }
 
-fn main(){
-    let pay = PaymentMethod::Card;
-    match pay{
-        PaymentMethod::Card => println!("Paid using Card"),
-        PaymentMethod::Cash => println!("Paid using Cash"),
-        PaymentMethod::Crypto => println!("Paid using crypto"),
-    }
+// fn main(){
+//     let pay = PaymentMethod::Card;
+//     match pay{
+//         PaymentMethod::Card => println!("Paid using Card"),
+//         PaymentMethod::Cash => println!("Paid using Cash"),
+//         PaymentMethod::Crypto => println!("Paid using crypto"),
+//     }
+// }
+
+// pub mod other_file;
+mod pratice;
+fn main() {
+    pratice::pratice();
 }
