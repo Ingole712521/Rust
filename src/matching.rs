@@ -1,4 +1,4 @@
-use std::io;
+// use std::io;
 
 pub fn matching() {
     // fn week() {
@@ -31,21 +31,32 @@ pub fn matching() {
 
     // Match Range
 
-    fn range() {
-        let mut age = String::new();
-        io::stdin().read_line(&mut age).unwrap();
-        let age: i32 = age.trim().parse().unwrap();
+    // fn range() {
+    //     let mut age = String::new();
+    //     io::stdin().read_line(&mut age).unwrap();
+    //     let age: i32 = age.trim().parse().unwrap();
 
-        match age {
-            0..=12 => println!("Child"),
-            13..=19 => println!("Teen"),
-            x if x > 19 => println!("Adult"),
-            _ => println!("undefined"),
-        }
-    }
+    //     match age {
+    //         0..=12 => println!("Child"),
+    //         13..=19 => println!("Teen"),
+    //         x if x > 19 => println!("Adult"),
+    //         _ => println!("undefined"),
+    //     }
+    // }
 
-    range();
+    // enum Color {Red , Blue}
 
+    // fn rang(){
+    //     let c = Color::Blue;
+    //     match c {
+    //         Color::Red => println!("Red"),
+    //         Color::Blue => println!("Blue"),
+    //     }
+    // }
+
+    // rang();
+
+    // range();
     // odd();
     // week();
 }
