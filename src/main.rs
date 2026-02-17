@@ -362,6 +362,7 @@ mod hash;
 mod handling;
 mod convert;
 mod vec;
+mod borrow;
 
 fn main() {
     pratice::pratice();
@@ -374,4 +375,5 @@ fn main() {
     handling::handling();
     convert::convert();
     vec:: vec();
+    borrow::borrow();
 }
