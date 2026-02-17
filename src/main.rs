@@ -356,9 +356,12 @@ mod circle;
 mod input;
 mod matching;
 mod pratice;
+mod vectors;
+
 fn main() {
     pratice::pratice();
     input::input();
     matching::matching();
     circle::circle();
+    vectors::vectors();
 }

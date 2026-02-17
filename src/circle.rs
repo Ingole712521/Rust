@@ -45,19 +45,19 @@ pub fn circle() {
     //     }
     // }
 
-    fn factorial() {
-        let mut num = String::new();
-        io::stdin().read_line(&mut num).unwrap();
-        let number: i32 = num.trim().parse().unwrap();
-        let mut fact = 1;
+    // fn factorial() {
+    //     let mut num = String::new();
+    //     io::stdin().read_line(&mut num).unwrap();
+    //     let number: i32 = num.trim().parse().unwrap();
+    //     let mut fact = 1;
 
-        for number in 1..=number {
-            fact *= number;
-        }
-        println!("{}", fact)
-    }
+    //     for number in 1..=number {
+    //         fact *= number;
+    //     }
+    //     println!("{}", fact)
+    // }
 
-    factorial();
+    // factorial();
 
     // chala();
     // breakh();
