@@ -135,18 +135,26 @@ pub fn hash() {
     //     }
     // }
 
-    fn pratice10() {
-        let mut country_capital = HashMap::new();
-        country_capital.insert("India", "Delhi");
-        country_capital.insert("USA", "Washington");
-        country_capital.insert("France", "Paris");
+    // fn pratice10() {
+    //     let mut country_capital = HashMap::new();
+    //     country_capital.insert("India", "Delhi");
+    //     country_capital.insert("USA", "Washington");
+    //     country_capital.insert("France", "Paris");
 
-        for country in country_capital.values() {
-            println!("The vlaue of country_capital is {}", country)
-        }
-    }
+    //     for country in country_capital.values() {
+    //         println!("The vlaue of country_capital is {}", country)
+    //     }
+    // }
 
-    pratice10();
+    // fn pratice11() {
+    //     let mut marks = HashMap::new();
+
+    //     marks.entry("Marks").or_insert(80);
+    //     println!("{:?}", marks);
+    // }
+
+    // pratice11();
+    // pratice10();
     // pratice9();
     // pratice8();
     // pratice7();
