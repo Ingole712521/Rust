@@ -358,6 +358,8 @@ mod matching;
 mod pratice;
 mod vectors;
 mod hash;
+// mod option;
+mod handling;
 
 fn main() {
     pratice::pratice();
@@ -366,4 +368,6 @@ fn main() {
     circle::circle();
     vectors::vectors();
     hash::hash();
+    // option::option();
+    handling::handling();
 }
