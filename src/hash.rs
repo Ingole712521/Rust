@@ -1,7 +1,5 @@
 use std::collections::HashMap;
 
-// use crate::pratice;
-
 pub fn hash() {
     // let mut student_marks = HashMap::new();
 
@@ -73,21 +71,87 @@ pub fn hash() {
     //     println!("the length of the marks is : {}" , marks.len())
     // }
 
-    fn pratice5() {
-        let mut marks = HashMap::new();
-        marks.insert("English", 200);
-        marks.insert("math", 100);
-        marks.insert("physics", 50);
+    // fn pratice5() {
+    //     let mut marks = HashMap::new();
+    //     marks.insert("English", 200);
+    //     marks.insert("math", 100);
+    //     marks.insert("physics", 50);
 
-        if marks.contains_key("PhysicsWala") {
-            println!("Key is present ")
-        } else {
-            println! {"Chud Gaye Guru"
-            }
+    //     if marks.contains_key("PhysicsWala") {
+    //         println!("Key is present ")
+    //     } else {
+    //         println! {"Chud Gaye Guru"
+    //         }
+    //     }
+    // }
+
+    // Update a value
+    // fn pratice6() {
+    //     let mut mark = HashMap::new();
+    //     mark.insert("Ghoda", 20);
+    //     mark.insert("Ghoda", 29);
+
+    //     println!("the change value of Ghoda is {:?}", mark);
+    // }
+
+    // Remoe a key
+
+    // fn pratice7() {
+    //     let mut marks = HashMap::new();
+    //     marks.insert("English", 200);
+    //     marks.insert("math", 100);
+    //     marks.insert("physics", 50);
+
+    //     marks.remove("English");
+    //     println!("The marks is {:?}", marks);
+    // }
+
+    // fn pratice8() {
+    //     let mut marks = HashMap::new();
+    //     marks.insert("English", 200);
+    //     marks.insert("math", 100);
+    //     marks.insert("physics", 50);
+
+    //     let mut result = 0;
+
+    //     for (_subject, mark) in &marks {
+    //         result += mark;
+    //     }
+
+    //     println!("{result}");
+    //     // wrong approach
+    //     // let result: i32 = marks.iter().sum();
+    //     // println!("The result is {result}")
+    // }
+
+    // fn pratice9() {
+    //     let mut country_capital = HashMap::new();
+    //     country_capital.insert("India", "Delhi");
+    //     country_capital.insert("USA", "Washington");
+    //     country_capital.insert("France", "Paris");
+
+    //     for country in country_capital.keys(){
+    //         println!("{country}")
+    //     }
+    // }
+
+    fn pratice10() {
+        let mut country_capital = HashMap::new();
+        country_capital.insert("India", "Delhi");
+        country_capital.insert("USA", "Washington");
+        country_capital.insert("France", "Paris");
+
+        for country in country_capital.values() {
+            println!("The vlaue of country_capital is {}", country)
         }
     }
 
-    pratice5();
+    pratice10();
+    // pratice9();
+    // pratice8();
+    // pratice7();
+    // pratice6();
+    // pratice5();
     // pratice4();
     // pratice3();
     // pratice2();
