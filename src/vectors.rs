@@ -25,9 +25,41 @@ pub fn vectors() {
     //     println!("{:?}", num)
     // }
 
+    // ownership of vector and looping
 
+    // fn bor(){
+    // let nums = vec![1,2,3,4,5,6];
+    // for x in nums{
+    //     print!(" {x}")
+    // }
+    // }
 
+    // Borrow of vector
 
+    // fn own() {
+    //     let nums = vec![1, 2, 3, 4, 5, 6, 7];
+    //     for x in &nums {
+    //         println!("{x}");
+    //     }
+
+    //     println!("{:? }", nums);
+    // }
+
+    // Task Question Sum of all the element in the vector
+
+    // fn task() {
+    //     let nums = vec![5, 10, 15, 20];
+    //     for x in &nums {
+    //         println!("{x}");
+    //     }
+    //     println!("{:?}", nums);
+    //     let result: i32 = nums.iter().sum();
+    //     println!("The sum of the vector is {result}");
+    // }
+
+    // task();
+    // own();
+    //   bor();
     // task();
     // empty();
     // firstquestion();

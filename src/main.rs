@@ -357,6 +357,7 @@ mod input;
 mod matching;
 mod pratice;
 mod vectors;
+mod hash;
 
 fn main() {
     pratice::pratice();
@@ -364,4 +365,5 @@ fn main() {
     matching::matching();
     circle::circle();
     vectors::vectors();
+    hash::hash();
 }
