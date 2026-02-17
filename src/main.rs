@@ -360,6 +360,8 @@ mod vectors;
 mod hash;
 // mod option;
 mod handling;
+mod convert;
+mod vec;
 
 fn main() {
     pratice::pratice();
@@ -370,4 +372,6 @@ fn main() {
     hash::hash();
     // option::option();
     handling::handling();
+    convert::convert();
+    vec:: vec();
 }

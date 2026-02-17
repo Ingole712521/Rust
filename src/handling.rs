@@ -1,3 +1,5 @@
+// use std::io::{self, stdin};
+
 pub fn handling() {
     // fn pratice() {
     //     fn divide(a: i32, b: i32) -> Result<i32, String> {
@@ -31,20 +33,42 @@ pub fn handling() {
     //     }
     // }
 
-    fn pratice() {
-        fn check_age(age: i32) -> Result<String, String> {
-            if age > 18 {
-                Ok(String::from("Eligible"))
-            } else {
-                Err(String::from("Not Eligible"))
-            }
-        }
+    // fn pratice() {
+    //     fn check_age(age: i32) -> Result<String, String> {
+    //         if age > 18 {
+    //             Ok(String::from("Eligible"))
+    //         } else {
+    //             Err(String::from("Not Eligible"))
+    //         }
+    //     }
 
-        match check_age(20) {
-            Ok(value) => println!("{}", value),
-            Err(err) => println!("{}", err),
-        }
-    }
+    //     match check_age(20) {
+    //         Ok(value) => println!("{}", value),
+    //         Err(err) => println!("{}", err),
+    //     }
+    // }
 
-    pratice();
+    
+
+// need to cover this topic afterward 
+
+
+//    fn read(){
+//     fn read_number() -> Result<i32 , String>{
+//          let mut number1 = String::new();
+//          io::stdin().read_line(&mut number1 ).unwrap();
+
+
+
+
+//     }
+//    }
+
+
+
+
+
+
+
+    // pratice();
 }
