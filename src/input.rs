@@ -74,18 +74,6 @@ pub fn input() {
     //     }
     // }
 
-
-
-
-
-
-
-
-
-
-
-
-
     // postive();
     // largest();
     // odd();

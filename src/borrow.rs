@@ -21,7 +21,7 @@ pub fn borrow() {
     // }
 
     fn task_borrow() {
-        let mut number = vec![10, 20, 30];
+        let  number = vec![10, 20, 30];
 
         for x in &number {
             println!("{:?}", x)

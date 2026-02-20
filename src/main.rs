@@ -83,7 +83,6 @@
 // fn main(){
 //     let name: &str  = "Rust";
 //     println!("This is rust {}", name);
-
 //     let mut name: String  = String::from("Rust");
 //     name.push_str(      " Language");
 //     println!("{}", name)
