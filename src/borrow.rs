@@ -20,17 +20,17 @@ pub fn borrow() {
     //     // println!("{:?}" , number)
     // }
 
-    fn task_borrow() {
-        let  number = vec![10, 20, 30];
+    // fn task_borrow() {
+    //     let  number = vec![10, 20, 30];
 
-        for x in &number {
-            println!("{:?}", x)
-        }
+    //     for x in &number {
+    //         println!("{:?}", x)
+    //     }
 
-        println!("{:?}", number);
-    }
+    //     println!("{:?}", number);
+    // }
 
-    task_borrow();
+    // task_borrow();
 
     // complete_borrow();
     // borrow_task();

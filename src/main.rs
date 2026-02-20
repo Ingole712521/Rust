@@ -362,6 +362,7 @@ mod handling;
 mod convert;
 mod vec;
 mod borrow;
+mod dsa;
 
 fn main() {
     pratice::pratice();
@@ -375,4 +376,6 @@ fn main() {
     convert::convert();
     vec:: vec();
     borrow::borrow();
+    dsa::dsa();
+    
 }

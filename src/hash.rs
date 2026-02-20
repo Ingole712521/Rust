@@ -1,5 +1,7 @@
 // use std::collections::HashMap;
 
+// use std::collections::HashMap;
+
 pub fn hash() {
     // let mut student_marks = HashMap::new();
 
