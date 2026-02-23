@@ -82,8 +82,29 @@ pub fn dsa() {
     //     println!("COunt is {count}")
     // }
 
-    // length();
+    // Reverse String
 
+    fn reverse() {
+        let mut input = String::new();
+        io::stdin().read_line(&mut input).unwrap();
+        let number: i32 = input.trim().parse().expect("Invalid Message");
+
+        let mut num = number.abs();
+        let mut reversed = 0;
+
+        while num > 0 {
+            reversed = reversed * 10 + num % 10;
+            num /= 10;
+        }
+
+        let result = if number < 0 { 1 } else { reversed };
+
+        println!("result is {}", result)
+    }
+
+    reverse();
+
+    // length();
     // fact();
     // sum();
     // even();
